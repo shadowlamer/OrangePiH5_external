@@ -65,7 +65,7 @@ recovery_key = port:PL04<0><default><default><default>
 boot_init_gpio_used	 = 1
 gpio0 =  port:PL10<1><default><default><1>
 gpio1 =  port:PA20<1><default><default><1>
-
+gpio2 =  port:PD11<1><default><default><1>
 
 ;---------------------------------------------------------------------------------------------------------
 ; if 1 == standby_mode, then support super standby;
@@ -930,10 +930,10 @@ gpio_used		= 1
 gpio_num		= 2
 gpio_pin_1		=  port:PL10<1><default><default><0>
 gpio_pin_2		=  port:PA20<1><default><default><1>
-;gpio_pin_3		=  port:PA13<1><default><default><1>
+gpio_pin_3		=  port:PD11<1><default><default><1>
 normal_led		= "gpio_pin_1"
 standby_led		= "gpio_pin_2"
-;network_led		= "gpio_pin_3"
+rfid_power		= "gpio_pin_3"
 
 ;--------------------------------
 ;[usbc0]: usbc0 configuration.
